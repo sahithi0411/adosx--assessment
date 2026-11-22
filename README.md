@@ -28,23 +28,19 @@ The main goal is to help users identify missing records, duplicate entries, orph
 
 ```text
 adosx-assessment/
-│
 ├── backend/
 │   ├── config/
 │   ├── reconciliation/
 │   ├── manage.py
 │   └── requirements.txt
-│
 ├── frontend/
 │   ├── src/
 │   ├── package.json
 │   └── index.html
-│
 ├── data/
 │   ├── locations.csv
 │   ├── system_a.csv
 │   └── system_b.csv
-│
 ├── README.md
 └── DECISIONS.md
 ```
@@ -142,7 +138,8 @@ Navigate to the backend folder and execute:
 python manage.py test reconciliation
 ```
 
-The tests cover the four disagreement types:
+The tests cover four disagreement types:
+
 - Missing in System B
 - Orphan in System B
 - Duplicate entries in System B
